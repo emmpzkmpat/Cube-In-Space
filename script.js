@@ -9,12 +9,12 @@ canvas.height = window.innerHeight;
 const isMobile = window.innerWidth < 768; // Puedes ajustar el valor según necesites
 
 const playerSize = isMobile ? 15 : 20; // Ajusta aquí el tamaño del jugador
-const obstacleSize = isMobile ? 35 : 60; // Ajusta aquí el tamaño de los obstáculos
+const obstacleSize = isMobile ? 48 : 60; // Ajusta aquí el tamaño de los obstáculos
 const distractorSize = isMobile ? 1 : 2; // Ajusta aquí el tamaño de los distractores
 const playerSpeed = isMobile ? 10 : 50; // Ajusta aquí la velocidad del jugador
 const obstacleSpeed = isMobile ? 25 : 20; // Ajusta aquí la velocidad de los obstáculos
 const spawnInterval = isMobile ? 300 : 140; // Intervalo de aparición de obstáculos en milisegundos
-const distractorInterval = isMobile ? 6 : 10; // Intervalo de aparición de distractores en milisegundos
+const distractorInterval = isMobile ? 12 : 10; // Intervalo de aparición de distractores en milisegundos
 
 const gameAreaHeight = canvas.height * 0.87; // Altura del área de juego (60% del canvas)
 const gameAreaY = (canvas.height - gameAreaHeight) / 2; // Coordenada Y de la zona de juego
