@@ -203,7 +203,7 @@ function gameLoop() {
         ctx.fillText('Game Over', canvas.width / 2, canvas.height / 2);
 
         // Mostrar mensaje de nuevo récord si aplica
-        if (Math.floor(score / 1000) >= 65) {
+        if (Math.floor(score / 1000) >= 120) {
             ctx.font = '24px Arial';
             ctx.fillText('¡Felicidades, Nuevo Récord de Jugador!', canvas.width / 2, canvas.height / 2 + 50);
         }
