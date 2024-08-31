@@ -11,8 +11,8 @@ const isMobile = window.innerWidth < 768; // Puedes ajustar el valor según nece
 const playerSize = isMobile ? 15 : 20; // Ajusta aquí el tamaño del jugador
 const obstacleSize = isMobile ? 35 : 60; // Ajusta aquí el tamaño de los obstáculos
 const distractorSize = isMobile ? 1 : 2; // Ajusta aquí el tamaño de los distractores
-const playerSpeed = isMobile ? 20 : 50; // Ajusta aquí la velocidad del jugador
-const obstacleSpeed = isMobile ? 18 : 20; // Ajusta aquí la velocidad de los obstáculos
+const playerSpeed = isMobile ? 10 : 50; // Ajusta aquí la velocidad del jugador
+const obstacleSpeed = isMobile ? 25 : 20; // Ajusta aquí la velocidad de los obstáculos
 const spawnInterval = isMobile ? 300 : 140; // Intervalo de aparición de obstáculos en milisegundos
 const distractorInterval = isMobile ? 6 : 10; // Intervalo de aparición de distractores en milisegundos
 
