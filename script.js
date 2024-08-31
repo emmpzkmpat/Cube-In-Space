@@ -5,14 +5,16 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// Tamaño y velocidad del jugador y las figuras
-const playerSize = 20;
-const obstacleSize = 60;
-const distractorSize = 2; // Tamaño de los distractores
-const playerSpeed = 50;
-const obstacleSpeed = 20;
-const spawnInterval = 140; // Intervalo de aparición de obstáculos en milisegundos
-const distractorInterval = 10; // Intervalo de aparición de distractores
+// Verificar si el dispositivo es móvil
+const isMobile = window.innerWidth < 768; // Puedes ajustar el valor según necesites
+
+const playerSize = isMobile ? 15 : 20; // Ajusta aquí el tamaño del jugador
+const obstacleSize = isMobile ? 35 : 60; // Ajusta aquí el tamaño de los obstáculos
+const distractorSize = isMobile ? 1 : 2; // Ajusta aquí el tamaño de los distractores
+const playerSpeed = isMobile ? 20 : 50; // Ajusta aquí la velocidad del jugador
+const obstacleSpeed = isMobile ? 8 : 20; // Ajusta aquí la velocidad de los obstáculos
+const spawnInterval = isMobile ? 300 : 140; // Intervalo de aparición de obstáculos en milisegundos
+const distractorInterval = isMobile ? 6 : 10; // Intervalo de aparición de distractores en milisegundos
 
 const gameAreaHeight = canvas.height * 0.87; // Altura del área de juego (60% del canvas)
 const gameAreaY = (canvas.height - gameAreaHeight) / 2; // Coordenada Y de la zona de juego
